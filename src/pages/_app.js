@@ -23,7 +23,7 @@ const gmarketSansLight = localFont({
 export default function App({ Component, pageProps }) {
   return (
     <main
-      className={`${gmarketSansBold.variable} ${gmarketSansMedium.variable} ${gmarketSansLight.variable}`}
+      className={`${gmarketSansBold.variable} ${gmarketSansMedium.variable} ${gmarketSansLight.variable} flex flex-col items-center bg-black overflow-x-hidden`}
     >
       <Component {...pageProps} />
     </main>

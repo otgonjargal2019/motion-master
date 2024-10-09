@@ -34,7 +34,7 @@ export default function AnimatedElement({ children, classname, style }) {
       <div
         className={classNames([
           classname,
-          isInView === true ? "show" : "hided",
+          isInView === true ? "showed" : "hided",
         ])}
 				style={{
 					width: "100%",
