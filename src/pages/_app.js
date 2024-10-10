@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import Layout from "@/app/components/Layout";
 import "@/styles/globals.css";
 import "@/styles/animation.css";
 import "@/styles/home.css";
@@ -23,10 +24,10 @@ const gmarketSansLight = localFont({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main
-      className={`${gmarketSansBold.variable} ${gmarketSansMedium.variable} ${gmarketSansLight.variable} flex flex-col items-center bg-black overflow-x-hidden`}
+    <Layout
+      className={`${gmarketSansBold.variable} ${gmarketSansMedium.variable} ${gmarketSansLight.variable} `}
     >
       <Component {...pageProps} />
-    </main>
+    </Layout>
   );
 }
