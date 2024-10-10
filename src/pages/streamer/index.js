@@ -1,4 +1,4 @@
-import AnimatedElement from "@/component/AnimatedElement";
+import AnimatedElement from "@/app/components/AnimatedElement";
 
 import "@/styles/streamer.scss";
 

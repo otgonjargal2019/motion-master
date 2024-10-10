@@ -1,4 +1,4 @@
-import AnimatedElement from "@/component/AnimatedElement";
+import AnimatedElement from "@/app/components/AnimatedElement";
 
 export default function DummyPage() {
   return (
