@@ -45,7 +45,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-5080px);
+      transform: translateX(-4530px);
     }
 }
 
@@ -54,12 +54,12 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-5080px);
+        transform: translateX(-4530px);
     }
 }
 
 .streamer_strip_1.hided {
-    transform: translateY(-1000px) translateX(5000px);
+    transform: translateY(-1000px) translateX(4530px);
     transition: all 0.5s;
 }
 
@@ -79,8 +79,8 @@
     position: absolute;
     top: 200px;
     > div {
-        width: 5080px;
-        min-width: 5080px;
+        width: 4530px;
+        min-width: 4530px;
         height: 86px;
         background: #FF5B15;
         transform: rotateZ(-11.52deg);
@@ -90,32 +90,32 @@
 
         > div:nth-child(1) {
             // background: green;
-            animation: marquee 10s linear infinite;
+            animation: marquee 30s linear infinite;
             white-space: nowrap;
             // opacity: 0;
-            max-width: 5080px;
-            min-width: 5080px;
-            width: 5080px;
+            max-width: 4530px;
+            min-width: 4530px;
+            width: 4530px;
             overflow: hidden;
             height: 46px;
         }
         > div:nth-child(2) {
             // background: red;
-            animation: marquee_completion 10s linear infinite;
+            animation: marquee_completion 30s linear infinite;
             white-space: nowrap;
-            max-width: 5080px;
-            min-width: 5080px;
-            width: 5080px;
+            max-width: 4530px;
+            min-width: 4530px;
+            width: 4530px;
             overflow: hidden;
             height: 46px;
-            // transform: translateX(-5080px);
+            // transform: translateX(-4530px);
         }
     }
 }
 
 
 .streamer_strip_2.hided {
-    transform: translateY(-1000px) translateX(-5000px);
+    transform: translateY(-1000px) translateX(-4530px);
     transition: all 0.5s;
 }
 
@@ -135,8 +135,8 @@
     position: absolute;
     top: 400px;
     > div {
-        width: 5080px;
-        min-width: 5080px;
+        width: 4530px;
+        min-width: 4530px;
         height: 86px;
         background: #4D4D53;
         transform: rotateZ(10.78deg);
@@ -146,27 +146,27 @@
 
         > div:nth-child(1) {
             // background: green;
-            animation: marquee 10s linear infinite;
+            animation: marquee 30s linear infinite;
             animation-direction: reverse;
             white-space: nowrap;
             // opacity: 0;
-            max-width: 5080px;
-            min-width: 5080px;
-            width: 5080px;
+            max-width: 4530px;
+            min-width: 4530px;
+            width: 4530px;
             overflow: hidden;
             height: 46px;
         }
         > div:nth-child(2) {
             // background: red;
-            animation: marquee_completion 10s linear infinite;
+            animation: marquee_completion 30s linear infinite;
             animation-direction: reverse;
             white-space: nowrap;
-            max-width: 5080px;
-            min-width: 5080px;
-            width: 5080px;
+            max-width: 4530px;
+            min-width: 4530px;
+            width: 4530px;
             overflow: hidden;
             height: 46px;
-            // transform: translateX(-5080px);
+            // transform: translateX(-4530px);
         }
     }
 }
