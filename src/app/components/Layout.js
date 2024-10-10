@@ -2,7 +2,10 @@ const Layout = ({ children }) => {
   return (
     <div>
       {children}
-      <footer>this is footer</footer>
+      <footer className="footer">
+        <div className="top-part"></div>
+        <div className="bottom-part"></div>
+      </footer>
     </div>
   );
 };

@@ -36,3 +36,15 @@ h1 {
 .orange {
   color: #ff5b15;
 }
+
+.footer .top-part {
+  width: 100%;
+  height: 251px;
+  background: linear-gradient(to right, #fc8a32, #f74919);
+}
+
+.footer .bottom-part {
+  width: 100%;
+  height: 300px;
+  background-color: #242222;
+}
