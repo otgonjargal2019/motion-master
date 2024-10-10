@@ -3,7 +3,7 @@ const Layout = ({ children }) => {
     <div>
       {children}
       <footer className="footer">
-        <div className="top-part"></div>
+        <img src="/Footer.png" />
         <div className="bottom-part"></div>
       </footer>
     </div>
