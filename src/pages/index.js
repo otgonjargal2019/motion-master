@@ -80,7 +80,7 @@ export default function Home() {
 
       <section ref={scalingWallRef} className="scaling-wall-container">
         <img
-          src="/Group.svg"
+          src="/net_walls.svg"
           alt="scaling walls"
           className={`scaling-wall ${isInView ? "show" : ""}`}
         />

@@ -3,7 +3,7 @@ const Layout = ({ children }) => {
     <div>
       {children}
       <footer className="footer">
-        <img src="/Footer.png" />
+        <img src="/footer.png" />
         <div className="bottom-part">
           <p className="text-white text-[24px] font-medium mb-4">
             스트리머와 게임 개발자를 위한 저작권 문제 해결 솔루션
