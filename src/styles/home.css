@@ -72,12 +72,7 @@
   }
 }
 .appearing-glass-container {
-  background-image: url(/gradient_glass.png);
-  background-repeat: no-repeat;
-  background-position-x: 50px;
   position: relative;
-  height: 1200px;
-  animation: backgroundFadeIn 1s ease forwards;
 }
 
 .overlay-text-2 {
@@ -89,16 +84,27 @@
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
+.background-image {
+  background-image: url(/gradient_glass.png);
+  background-repeat: no-repeat;
+  background-position-x: 50px;
+  height: 1200px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+
 .overlay-text-3 {
   position: absolute;
   bottom: 290px;
   right: 140px;
   opacity: 0;
   transform: translateY(50px);
-  transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+  transition: transform 2.5s ease-in-out, opacity 2.5s ease-in-out;
   text-align: end;
 }
 
+.background-image.show,
 .overlay-text-2.show,
 .overlay-text-3.show {
   opacity: 1;

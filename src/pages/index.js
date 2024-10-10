@@ -1,13 +1,18 @@
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
 import AnimatedLine from "@/app/components/animatedLine";
+import AnimatedElement from "@/app/components/AnimatedElement";
 
 export default function Home() {
   const scalingWallRef = useRef(null);
   const fadingGlassRef = useRef(null);
+  const fadingGlassRef2 = useRef(null);
+  const fadingGlassRef3 = useRef(null);
 
   const [isInView, setIsInView] = useState(false);
   const [isSectionVisible, setIsSectionVisible] = useState(false);
+  const [isSectionVisible2, setIsSectionVisible2] = useState(false);
+  const [isSectionVisible3, setIsSectionVisible3] = useState(false);
 
   const router = useRouter();
 
@@ -51,6 +56,45 @@ export default function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    const sectionObserver2 = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        setIsSectionVisible2(entry.isIntersecting);
+      },
+      { threshold: 0.3 }
+    );
+
+    if (fadingGlassRef2.current) {
+      sectionObserver2.observe(fadingGlassRef2.current);
+    }
+
+    return () => {
+      if (fadingGlassRef2.current) {
+        sectionObserver2.unobserve(fadingGlassRef2.current);
+      }
+    };
+  }, []);
+  useEffect(() => {
+    const sectionObserver3 = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        setIsSectionVisible3(entry.isIntersecting);
+      },
+      { threshold: 0.3 }
+    );
+
+    if (fadingGlassRef3.current) {
+      sectionObserver3.observe(fadingGlassRef3.current);
+    }
+
+    return () => {
+      if (fadingGlassRef3.current) {
+        sectionObserver3.unobserve(fadingGlassRef3.current);
+      }
+    };
+  }, []);
+
   const onClickBtn = (path) => {
     router.push(path);
   };
@@ -89,8 +133,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section ref={fadingGlassRef} className="appearing-glass-container">
-        <div className={`overlay-text-2 ${isSectionVisible ? "show" : ""}`}>
+      <section className="appearing-glass-container">
+        <div
+          ref={fadingGlassRef}
+          className={`background-image ${isSectionVisible ? "show" : ""}`}
+        ></div>
+        <div
+          ref={fadingGlassRef2}
+          className={`overlay-text-2 ${isSectionVisible2 ? "show" : ""}`}
+        >
           <h2 className="text-white text-[80px] font-bold leading-[65px]">
             <span className="border-b border-[#FF5B15] border-b-[3px]">
               GLS Coach
@@ -108,7 +159,10 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className={`overlay-text-3 ${isSectionVisible ? "show" : ""}`}>
+        <div
+          ref={fadingGlassRef3}
+          className={`overlay-text-3 ${isSectionVisible3 ? "show" : ""}`}
+        >
           <h2 className="text-white text-[80px] font-bold leading-[65px]">
             쉬운 저작권 관리
           </h2>
