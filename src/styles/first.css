@@ -1,0 +1,45 @@
+.last-section {
+  background-image: url("/gradient_glass.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1400px;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  margin-top: 200px;
+  border: 1px solid blue;
+}
+
+.bg-fade-in {
+  opacity: 1;
+}
+
+.content {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  border: 1px solid red;
+  margin-left: 150px;
+}
+
+.text-appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title {
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 65px;
+}
+
+.bordered-text {
+  border-bottom: 3px solid #ff5b15;
+}
+
+.description {
+  margin-top: 20px;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+}

@@ -4,6 +4,7 @@ import AnimatedLine from "@/app/components/animatedLine";
 export default function FirstPage() {
   const svgRef = useRef(null);
   const sectionRef = useRef(null);
+
   const [isInView, setIsInView] = useState(false);
   const [isSectionVisible, setIsSectionVisible] = useState(false);
   useEffect(() => {
@@ -30,9 +31,7 @@ export default function FirstPage() {
     const sectionObserver = new IntersectionObserver(
       (entries) => {
         const [entry] = entries;
-        if (entry.isIntersecting) {
-          setIsSectionVisible(true);
-        }
+        setIsSectionVisible(entry.isIntersecting);
       },
       { threshold: 0.5 }
     );
@@ -71,36 +70,43 @@ export default function FirstPage() {
         <p className="font-medium">문제 해결 솔루션</p>
       </section>
 
-      <div className="flex justify-center mt-[250px] ">
+      <div className="flex justify-center mt-[400px]">
         <img
           src="/Group.svg"
           alt="moving walls"
           ref={svgRef}
           className={`scaling-svg ${isInView ? "scale-up" : ""}`}
-          style={{ width: "50%" }}
+          style={{ width: "10%" }}
         />
       </div>
-      <section
-        ref={sectionRef}
-        className={`mt-[250px] ml-[170px] transition-opacity duration-1000 ease-in-out ${
-          isSectionVisible ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        <h2 className="text-white text-[80px] font-bold leading-[65px]">
-          <span className="border-b border-[#FF5B15] border-b-[3px]">
-            GLS Coach
-          </span>
-          <span> 하나로</span>
-        </h2>
 
-        <div className="mt-4 text-white text-[30px] font-medium">
-          <p>스트리머가 게임 방송을 할 때,</p>
-          <p>복잡한 저작권 문제를 한 곳에서 해결할 수 있습니다.</p>
-          <p>계약에서 게임 플레이, 방송 제어까지</p>
-          <p>하나로 손쉽게 라이선스 문제를 해결하세요.</p>
+      <section
+        style={{
+          backgroundImage: "url(/gradient_glass.png)",
+          backgroundRepeat: "no-repeat",
+          height: "1200px",
+          marginTop: "400px",
+        }}
+      >
+        <div
+          ref={sectionRef}
+          className={`content-section ${isSectionVisible ? "show" : ""}`}
+        >
+          <h2 className="text-white text-[80px] font-bold leading-[65px]">
+            <span className="border-b border-[#FF5B15] border-b-[3px]">
+              GLS Coach
+            </span>
+            <span> 하나로</span>
+          </h2>
+
+          <div className="mt-4 text-white text-[30px] font-medium">
+            <p>스트리머가 게임 방송을 할 때,</p>
+            <p>복잡한 저작권 문제를 한 곳에서 해결할 수 있습니다.</p>
+            <p>계약에서 게임 플레이, 방송 제어까지</p>
+            <p>하나로 손쉽게 라이선스 문제를 해결하세요.</p>
+          </div>
         </div>
       </section>
-      <section style={{ height: "1500px" }}></section>
     </div>
   );
 }

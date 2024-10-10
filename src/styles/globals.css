@@ -17,6 +17,14 @@
 
 body {
   font-family: var(--font-gmarket-sans-light);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
 }
 
 @layer utilities {
@@ -48,14 +56,30 @@ body {
   transform: scale(10);
 }
 
-.transition-opacity {
-  transition: opacity 1s ease-in-out;
+@keyframes text-active-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.opacity-0 {
+.content-section {
+  /* margin-top: 450px;
+  margin-left: 170px; */
+  /* height: 300px; */
+  margin-top: 200px;
+  margin-left: 170px;
+
   opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-.opacity-100 {
+.content-section.show {
   opacity: 1;
+  transform: translateY(0);
 }

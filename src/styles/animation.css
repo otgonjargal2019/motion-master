@@ -1,47 +1,46 @@
 body {
-    background-color: #131316;
-    color: #ffffff;
-    padding: 0;
-    margin: 0;
+  background-color: #000;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
 }
 
 .moving_walls.hided > div > img {
-    /* opacity: 0; */
-    transform: scale(0);
-    transition: all 0.2s;
+  /* opacity: 0; */
+  transform: scale(0);
+  transition: all 0.2s;
 }
 
 .moving_walls.show > div > img {
-    /* opacity: 1; */
-    transform: scale(2);
-    transition: all 0.9s;
+  /* opacity: 1; */
+  transform: scale(2);
+  transition: all 0.9s;
 }
 
 .just_test1.hided > div > * {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-1000px);
-    transition: all 0.5s;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-1000px);
+  transition: all 0.5s;
 }
 
 .just_test1.show > div > * {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-    transition: all 0.9s;
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 0.9s;
 }
 
-
 .just_test2.hided > div > * {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(1000px);
-    transition: all 0.5s;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(1000px);
+  transition: all 0.5s;
 }
 
 .just_test2.show > div > * {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-    transition: all 0.9s;
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 0.9s;
 }
