@@ -1,8 +1,7 @@
 import localFont from "next/font/local";
 import "@/styles/globals.css";
 import "@/styles/animation.css";
-import "@/styles/fullpage.css";
-import "@/styles/first.css";
+import "@/styles/home.css";
 
 const gmarketSansBold = localFont({
   src: "./fonts/GmarketSansTTFBold.ttf",

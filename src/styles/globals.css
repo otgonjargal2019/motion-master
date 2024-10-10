@@ -33,53 +33,6 @@ h1 {
   } */
 }
 
-@keyframes movingLine {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-.animate-moving-line {
-  width: 100%;
-  height: 100%;
-  animation: movingLine 1s linear infinite;
-}
-
-.scaling-svg {
-  transition: transform 0.5s ease;
-}
-
-.scale-up {
-  transform: scale(10);
-}
-
-@keyframes text-active-animation {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.content-section {
-  /* margin-top: 450px;
-  margin-left: 170px; */
-  /* height: 300px; */
-  margin-top: 200px;
-  margin-left: 170px;
-
-  opacity: 0;
-  transform: translateY(50px);
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
-
-.content-section.show {
-  opacity: 1;
-  transform: translateY(0);
+.orange {
+  color: #ff5b15;
 }

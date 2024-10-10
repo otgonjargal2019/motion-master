@@ -1,0 +1,110 @@
+/* moving line style */
+@keyframes movingLine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-moving-line {
+  width: 100%;
+  height: 100%;
+  animation: movingLine 1s linear infinite;
+}
+
+/* scaling walls style */
+.scaling-wall-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+  overflow: visible;
+}
+
+.scaling-wall {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform: scale(0.15);
+  transform-origin: center;
+}
+
+.scaling-wall::before,
+.scaling-wall::after {
+  content: "";
+  display: block;
+  height: 715px;
+}
+
+.scaling-wall.show {
+  transform: scale(1);
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50px);
+  font-size: 100px;
+  font-weight: 700;
+  text-wrap: nowrap;
+  color: white;
+  opacity: 0;
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.overlay-text.show {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+/* fading In glass style */
+.appearing-glass-container {
+  background-image: url(/gradient_glass.png);
+  background-repeat: no-repeat;
+  background-position-x: 50px;
+  position: relative;
+  height: 1200px;
+}
+
+.overlay-text-2 {
+  position: absolute;
+  top: 150px;
+  left: 170px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.overlay-text-3 {
+  position: absolute;
+  bottom: 290px;
+  right: 140px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+  text-align: end;
+}
+
+.overlay-text-2.show,
+.overlay-text-3.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* main button style */
+.btn {
+  background-color: #1c1c1c;
+  width: 700px;
+  height: 181px;
+  border-radius: 40px;
+  border: 3px solid #1c1c1c;
+  font-size: 48px;
+  font-weight: 500;
+  color: white;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.btn:hover {
+  border: 3px solid #ff5b15;
+}

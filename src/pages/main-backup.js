@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
 import AnimatedLine from "@/app/components/animatedLine";
 
-export default function Home() {
+export default function FirstPage() {
   const scalingWallRef = useRef(null);
   const fadingGlassRef = useRef(null);
 
@@ -121,8 +121,8 @@ export default function Home() {
         </div>
       </section>
       <section
-        style={{ height: "500px" }}
-        className="flex justify-center items-center gap-12"
+        style={{ height: "500px", border: "1px solid red" }}
+        className="flex justify-center items-center gap-10"
       >
         <button className="btn" onClick={() => onClickBtn("/streamer")}>
           스트리머 <span className="font-medium text-[#929292]">이신가요?</span>
