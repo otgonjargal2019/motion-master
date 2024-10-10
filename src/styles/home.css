@@ -60,17 +60,29 @@
 }
 
 /* fading In glass style */
+
+@keyframes backgroundFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .appearing-glass-container {
   background-image: url(/gradient_glass.png);
   background-repeat: no-repeat;
   background-position-x: 50px;
   position: relative;
   height: 1200px;
+  animation: backgroundFadeIn 1s ease forwards;
 }
 
 .overlay-text-2 {
   position: absolute;
-  top: 150px;
+  top: 140px;
   left: 170px;
   opacity: 0;
   transform: translateY(50px);

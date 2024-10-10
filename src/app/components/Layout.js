@@ -1,6 +1,6 @@
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="flex flex-col items-center bg-black overflow-x-hidden">
       {children}
       <footer className="footer">
         <img src="/footer.png" />

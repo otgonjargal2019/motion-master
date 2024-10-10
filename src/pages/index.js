@@ -128,7 +128,7 @@ export default function Home() {
           스트리머 <span className="font-medium text-[#929292]">이신가요?</span>
         </button>
         <button className="btn" onClick={() => onClickBtn("/streamer")}>
-          게임 개발사
+          게임 개발사{" "}
           <span className="font-medium text-[#929292]">이신가요?</span>
         </button>
       </section>
