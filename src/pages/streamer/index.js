@@ -62,29 +62,55 @@ export default function Streamer() {
           marginTop: -400,
           minHeight: 800,
           minWidth: "1920px",
-          maxWidth: "100vw",
-          backgroundColor: "grey",
+          maxWidth: "1920px",
+          // backgroundColor: "grey",
         }}
       >
-        test
+        <AnimatedElement classname={"text_1"}>
+          <div>
+            <span>저작권</span> 때문에<br />
+            어려움을 겪고 계신가요?
+          </div>
+        </AnimatedElement>
+
       </div>
       <div
-        style={{ minHeight: 800, maxWidth: "100vw", backgroundColor: "#444" }}
+        style={{
+          minHeight: 800,
+          minWidth: "1920px",
+          maxWidth: "1920px",
+          backgroundColor: "#444"
+        }}
       >
         test2
       </div>
       <div
-        style={{ minHeight: 800, maxWidth: "100vw", backgroundColor: "#444" }}
+        style={{
+          minHeight: 800,
+          minWidth: "1920px",
+          maxWidth: "1920px",
+          backgroundColor: "#444"
+        }}
       >
         test2
       </div>
       <div
-        style={{ minHeight: 800, maxWidth: "100vw", backgroundColor: "#444" }}
+        style={{
+          minHeight: 800,
+          minWidth: "1920px",
+          maxWidth: "1920px",
+          backgroundColor: "#404"
+        }}
       >
         test2
       </div>
       <div
-        style={{ minHeight: 800, maxWidth: "100vw", backgroundColor: "#444" }}
+        style={{
+          minHeight: 800,
+          minWidth: "1920px",
+          maxWidth: "1920px",
+          backgroundColor: "#440"
+        }}
       >
         test2
       </div>
