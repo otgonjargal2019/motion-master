@@ -13,7 +13,7 @@ export default function Streamer() {
         </div>
       </AnimatedElement>
 
-      <div className="min-h-[920px] overflow-y-hidden overflow-x-hidden relative top-[-50px]">
+      <div className="min-h-[709px] overflow-y-hidden overflow-x-hidden relative top-[120px]">
         <AnimatedElement classname={"streamer_strip_2"}>
           <div>
             <div>
@@ -59,11 +59,13 @@ export default function Streamer() {
 
       <div
         style={{
-          marginTop: -400,
-          minHeight: 800,
+          marginTop: 0,
+          minHeight: 600,
           minWidth: "1920px",
           maxWidth: "1920px",
-          // backgroundColor: "grey",
+          position: "absolute",
+          top: "709.2px",
+          // backgroundColor: "green",
         }}
       >
         <AnimatedElement classname={"text_1"}>
@@ -76,44 +78,193 @@ export default function Streamer() {
       </div>
       <div
         style={{
-          minHeight: 800,
+          marginTop: 0,
+          minHeight: 600,
           minWidth: "1920px",
           maxWidth: "1920px",
-          backgroundColor: "#444",
+          position: "absolute",
+          top: "1316.11px",
+          // backgroundColor: "red",
         }}
       >
-        test2
+        <AnimatedElement classname={"text_2"}>
+          <div>
+            <span>GLS Coach</span>와 함께
+            <br />
+            <span>방송</span>에만 <span>집중</span>해보세요.
+          </div>
+        </AnimatedElement>
       </div>
       <div
         style={{
-          minHeight: 800,
-          minWidth: "1920px",
-          maxWidth: "1920px",
-          backgroundColor: "#444",
+          position: "absolute",
+          top: "929.87px",
+          left: "943.66px",
+          // backgroundColor: "red",
+          // backgroundImage: "url('ellipse_1.svg')",
+          // backgroundRepeat: "no-repeat",
+          // // backgroundAttachment: "fixed",
+          // // backgroundSize: "100% 100%",
+          // backgroundSize:"cover",
+          // minWidth: 900,
+          // minHeight: 900,
         }}
       >
-        test2
+        <AnimatedElement classname={"ellipse_1"}>
+          <div style={{ position: "relative" }}>
+            <img
+              src="/ellipse_1.svg"
+              alt="ellipse 1"
+              style={{
+                position: "absolute",
+                top: "-194px",
+                left: "-244px",
+                minHeight: 658,
+                minWidth: 1222,
+              }}
+            />
+            <img src="/vector.svg" alt="vector" />
+          </div>
+        </AnimatedElement>
       </div>
+
       <div
         style={{
-          minHeight: 800,
-          minWidth: "1920px",
-          maxWidth: "1920px",
-          backgroundColor: "#404",
+          position: "absolute",
+          top: "1861.11px",
+          left: "240px",
+          // backgroundColor: "red",
+          // backgroundImage: "url('ellipse_1.svg')",
+          // backgroundRepeat: "no-repeat",
+          // // backgroundAttachment: "fixed",
+          // // backgroundSize: "100% 100%",
+          // backgroundSize:"cover",
+          // minWidth: 1900,
+          // minHeight: 900,
         }}
       >
-        test2
+        <AnimatedElement classname={"text_3"}>
+          <div
+            style={{
+              // backgroundColor: "red",
+              minHeight: 320,
+            }}
+          >
+            <span>모든 저작권 계약은 GLS Coach에서</span>
+            <p>
+              방송을 위한
+              <br />
+              게임 이용허락 받기도,
+              <br />
+              지키기도 쉬워집니다.​
+            </p>
+          </div>
+        </AnimatedElement>
+
+        <AnimatedElement classname={"text_3_2"}>
+          <div>
+            <p>
+              스트리머와 게임 개발자가 <span>게임 방송 저작권 계약</span>을 쉽게
+              할 수 있는 플랫폼!
+              <br />
+              이제 게임 개발사 이메일을 일일이 찾고, 허락 답변을 기다릴 필요가
+              없어요.
+              <br />
+              복잡한 절차는 간단하게, 방송에 더 집중할 수 있도록
+              <br />
+              <span>한 곳에서 손쉽게</span> 저작권 계약을 관리하세요.
+            </p>
+          </div>
+        </AnimatedElement>
       </div>
+
       <div
         style={{
-          minHeight: 800,
-          minWidth: "1920px",
-          maxWidth: "1920px",
-          backgroundColor: "#440",
+          position: "absolute",
+          top: "2622.71px",
+          left: "240px",
+          // backgroundColor: "yellow",
         }}
       >
-        test2
+        <AnimatedElement classname={"three_d_black_chrome_shape"}>
+          <div style={{ position: "relative" }}>
+            <img src="/3d_black_chrome_shape.png" alt="3d_black_chrome_shape" />
+          </div>
+        </AnimatedElement>
       </div>
+
+      <div
+        style={{
+          position: "absolute",
+          top: "2697.04px",
+          left: "816px",
+        }}
+      >
+        <AnimatedElement classname={"text_4"}>
+          <div>
+            계약 준수 검증
+            <p>
+              게임 방송 중 저작권 문제? 더 이상 걱정하지 마세요!
+              <br />
+              ​저작권 위반을 이유로 유튜브 같은 플랫폼이
+              <span>실수로 영상을 삭제</span>하더라도,
+              <br />
+              믿을 수 있는 증거가 되어 드릴게요.
+              <br />
+              ​계약서 자동 생성과 <span>계약 준수 검증 기능</span>으로 귀찮은
+              절차는 줄이고,
+              <br />
+              ​방송에만 몰두하세요. 저작권 문제 해결, 이제 더 쉽고 빠르게
+              경험하세요!
+            </p>
+          </div>
+        </AnimatedElement>
+      </div>
+
+      <div
+        style={{
+          position: "absolute",
+          top: "3448.85px",
+          left: "240px",
+        }}
+      >
+        <AnimatedElement classname={"text_5"}>
+          <div>
+            <span>실시간 가이드라인 준수 확인</span>
+            <p>게임 방송할 때 가이드라인?<br />
+            이제 신경 쓸 필요 없어요!</p>
+            <p>
+            실수로 게임 방송을 위한 <span>가이드라인을 위반</span>할까 걱정할 필요 없이,<br />
+            ​자유롭게 방송하세요.<br />
+            ​방송 SW(OBS)와 게임 안에서 실시간으로 가이드라인 위반을 방지해 드릴게요.
+            </p>
+          </div>
+        </AnimatedElement>
+      </div>
+
+      <div
+        style={{
+          position: "absolute",
+          top: "3443.17px",
+          left: "1319.62px",
+          // backgroundColor: "yellow",
+        }}
+      >
+        <AnimatedElement classname={"three_d_abstract3_19"}>
+          <div style={{ position: "relative" }}>
+            <img src="/3d_abstract3_19.png" alt="3d_abstract3_19" />
+          </div>
+        </AnimatedElement>
+      </div>
+
+      <div
+        style={{
+          minHeight: "3500px",
+          minWidth: "1920px",
+          maxWidth: "1920px",
+          // backgroundColor: "#444",
+        }}
+      ></div>
     </div>
   );
 }

@@ -5,12 +5,16 @@ export default function AnimatedElement({ children, classname, style }) {
   const ref = useRef(null);
 
   const [isInView, setIsInView] = useState(false);
+  const [initiliazed, setInitiliazed] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         const [entry] = entries;
         setIsInView(entry.isIntersecting);
+        if (entry.isIntersecting === true) {
+          setInitiliazed(true);
+        }
       },
       { threshold: 0.5 }
     );
@@ -34,7 +38,7 @@ export default function AnimatedElement({ children, classname, style }) {
       <div
         className={classNames([
           classname,
-          isInView === true ? "showed" : "hided",
+          initiliazed === true ? "showed" : isInView === true ? "showed" : "hided",
         ])}
         style={{
           width: "100%",
