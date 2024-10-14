@@ -96,13 +96,11 @@ export default function Game() {
 
   return (
     <div className="border w-full">
-      <AnimatedElement classname={"page_title"}>
-        <div>
-          <div>
-            <span>for</span>&nbsp;<span>Game co. / Game IP co.</span>
-          </div>
-        </div>
-      </AnimatedElement>
+      <div className="title-container text-40">
+        <span className="gray">for</span>&nbsp;
+        <span className="orange">Game co. / Game IP co.</span>
+      </div>
+
       <section ref={imgRef} className="silver-cubes-container">
         <img
           src="/silver_cubes.png"
@@ -124,7 +122,7 @@ export default function Game() {
       </section>
       <section ref={img2Ref} className="shining-sun-container">
         <img
-          className={`shining-sun motion-x-50 ${isInImg2View ? "showed" : ""}`}
+          className={`shining-sun motion-x-100 ${isInImg2View ? "showed" : ""}`}
           src="/ellipse.png"
           alt="ellipse"
         />
@@ -185,7 +183,7 @@ export default function Game() {
           alt="hairy image"
         />
         <div
-          className={`overlay-text scale-05 ${isInImg4View ? "showed" : ""}`}
+          className={`overlay-text motion-y-50 ${isInImg4View ? "showed" : ""}`}
         >
           <span className="orange text-30">
             전자 가이드라인 기반 핵심 콘텐츠 노출 방지

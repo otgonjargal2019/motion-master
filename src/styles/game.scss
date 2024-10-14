@@ -1,8 +1,15 @@
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 128px 0 29px;
+}
+
 .silver-cubes-container {
   position: relative;
   width: 100%;
   height: 1073px;
-  border: 1px solid red;
+
   .silver-cubes {
     position: absolute;
     top: 0;
@@ -11,26 +18,25 @@
 
   .overlay-text {
     position: absolute;
-    top: 423px;
-    left: 886px;
+    top: 427px;
+    left: 889px;
   }
 }
 
 .shining-sun-container {
   position: relative;
-  border: 1px solid blue;
   width: 100%;
-  height: 1300px;
+  height: 995px;
 
   .shining-sun {
     position: absolute;
-    top: 0;
+    top: -265px;
     right: 0;
   }
 
   .overlay-text {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 237px;
   }
 }
@@ -38,24 +44,29 @@
 .abstract-image-container {
   position: relative;
   width: 100%;
-  border: 1px solid green;
+  height: 711px;
+
+  .abstract-image {
+    position: absolute;
+    bottom: 0;
+  }
 
   .overlay-text {
     position: absolute;
-    top: 25%;
+    top: 37%;
     left: 48%;
   }
 }
 
 .hairy-image-container {
+  margin: 160px 0 90px;
   position: relative;
   width: 100%;
-  height: 900px;
-  border: 1px solid red;
+  height: 680px;
 
   .hairy-image {
     position: absolute;
-    top: 25%;
+    top: 16%;
     right: 135px;
   }
 
