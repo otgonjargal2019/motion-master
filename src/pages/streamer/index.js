@@ -5,7 +5,7 @@ import "@/styles/streamer.scss";
 export default function Streamer() {
   return (
     <div className="bg-black max-w-[1920px] min-h-[100vh] relative">
-      <AnimatedElement classname={"streamer_page_title"}>
+      <AnimatedElement classname={"page_title"}>
         <div>
           <div>
             <span>for</span>&nbsp;<span>Streamer</span>
@@ -68,18 +68,18 @@ export default function Streamer() {
       >
         <AnimatedElement classname={"text_1"}>
           <div>
-            <span>저작권</span> 때문에<br />
+            <span>저작권</span> 때문에
+            <br />
             어려움을 겪고 계신가요?
           </div>
         </AnimatedElement>
-
       </div>
       <div
         style={{
           minHeight: 800,
           minWidth: "1920px",
           maxWidth: "1920px",
-          backgroundColor: "#444"
+          backgroundColor: "#444",
         }}
       >
         test2
@@ -89,7 +89,7 @@ export default function Streamer() {
           minHeight: 800,
           minWidth: "1920px",
           maxWidth: "1920px",
-          backgroundColor: "#444"
+          backgroundColor: "#444",
         }}
       >
         test2
@@ -99,7 +99,7 @@ export default function Streamer() {
           minHeight: 800,
           minWidth: "1920px",
           maxWidth: "1920px",
-          backgroundColor: "#404"
+          backgroundColor: "#404",
         }}
       >
         test2
@@ -109,7 +109,7 @@ export default function Streamer() {
           minHeight: 800,
           minWidth: "1920px",
           maxWidth: "1920px",
-          backgroundColor: "#440"
+          backgroundColor: "#440",
         }}
       >
         test2

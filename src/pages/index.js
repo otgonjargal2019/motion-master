@@ -128,8 +128,9 @@ export default function Home() {
           alt="scaling walls"
           className={`scaling-wall ${isInView ? "show" : ""}`}
         />
-        <div className={`overlay-text ${isInView ? "show" : ""}`}>
-          <span className="orange">게임 방송 계약</span>의 새로운 경험
+        <div className={`overlay-text big-text ${isInView ? "show" : ""}`}>
+          <span className="orange">게임 방송 계약</span>
+          <span className="white">의 새로운 경험</span>
         </div>
       </section>
 
@@ -181,7 +182,7 @@ export default function Home() {
         <button className="btn" onClick={() => onClickBtn("/streamer")}>
           스트리머 <span className="font-medium text-[#929292]">이신가요?</span>
         </button>
-        <button className="btn" onClick={() => onClickBtn("/streamer")}>
+        <button className="btn" onClick={() => onClickBtn("/game")}>
           게임 개발사{" "}
           <span className="font-medium text-[#929292]">이신가요?</span>
         </button>

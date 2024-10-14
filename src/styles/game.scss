@@ -1,0 +1,67 @@
+.silver-cubes-container {
+  position: relative;
+  width: 100%;
+  height: 1073px;
+  border: 1px solid red;
+  .silver-cubes {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 423px;
+    left: 886px;
+  }
+}
+
+.shining-sun-container {
+  position: relative;
+  border: 1px solid blue;
+  width: 100%;
+  height: 1300px;
+
+  .shining-sun {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 237px;
+  }
+}
+
+.abstract-image-container {
+  position: relative;
+  width: 100%;
+  border: 1px solid green;
+
+  .overlay-text {
+    position: absolute;
+    top: 25%;
+    left: 48%;
+  }
+}
+
+.hairy-image-container {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  border: 1px solid red;
+
+  .hairy-image {
+    position: absolute;
+    top: 25%;
+    right: 135px;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 20%;
+    left: 240px;
+  }
+}

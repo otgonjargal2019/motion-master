@@ -3,20 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --font-gmarket-sans-bold: "GmarketSansBold", sans-serif;
-  --font-gmarket-sans-medium: "GmarketSansMedium", sans-serif;
-  --font-gmarket-sans-light: "GmarketSansLight", sans-serif;
+  font-family: "GmarketSans";
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* --background: #0a0a0a;
-    --foreground: #ededed; */
   }
 }
 
 body {
-  font-family: var(--font-gmarket-sans-light);
+  font-family: "GmarketSans";
+  background-color: #000;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -28,13 +25,16 @@ h1 {
 }
 
 @layer utilities {
-  /* .text-balance {
-    text-wrap: balance;
-  } */
 }
 
+.white {
+  color: #fff;
+}
 .orange {
   color: #ff5b15;
+}
+.gray {
+  color: #929292;
 }
 
 .footer .top-part {
@@ -48,4 +48,81 @@ h1 {
   height: 300px;
   background-color: #242222;
   padding: 56px 76px;
+}
+
+.big-text {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115px;
+}
+
+.text-60 {
+  line-height: 69px;
+  font-weight: 500;
+  font-size: 60px;
+}
+.text-30 {
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.motion-x-50 {
+  transform: translateX(50px);
+  transition: transform 2s ease;
+}
+.motion-x-50.showed {
+  transform: translateX(0px);
+}
+
+.motion-y-50 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.motion-y-50.showed {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.motion-x-minus-50 {
+  transform: translateX(-50px);
+  transition: transform 2s ease;
+}
+.motion-x-minus-50.showed {
+  transform: translateX(0px);
+}
+
+.motion-y-minus-50 {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.motion-y-minus-50.showed {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.scale-05 {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: transform 2s ease, opacity 2s ease;
+}
+
+.scale-05.showed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.scale-08 {
+  opacity: 0;
+  transform: scale(0.4);
+  transition: transform 2s ease, opacity 2s ease;
+}
+
+.scale-08.showed {
+  opacity: 1;
+  transform: scale(0.984);
 }
