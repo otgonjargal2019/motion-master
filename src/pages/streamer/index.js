@@ -5,7 +5,7 @@ import "@/styles/streamer.scss";
 export default function Streamer() {
   return (
     <div className="bg-black max-w-[1920px] min-h-[100vh] relative">
-      <AnimatedElement classname={"page_title"}>
+      <AnimatedElement classname={"streamer_page_title"}>
         <div>
           <div>
             <span>for</span>&nbsp;<span>Streamer</span>
