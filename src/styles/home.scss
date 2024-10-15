@@ -1,4 +1,27 @@
+h1.gls-coach {
+  background-color: #ff5b15;
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  border-radius: 50px;
+  width: 366.22px;
+  height: 56.04px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 9px;
+  margin-top: 3px;
+}
+
 /* moving line style */
+.moving-line-container {
+  margin: 155px 224px 0 239px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 52px;
+}
+
 @keyframes movingLine {
   0% {
     transform: translateX(-100%);
@@ -16,23 +39,18 @@
 
 /* scaling walls style */
 .scaling-wall-container {
+  margin-top: 120px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 900px;
   overflow: visible;
+
   .scaling-wall {
     transition: transform 0.5s ease, opacity 0.5s ease;
     transform: scale(0.15);
     transform-origin: center;
-  }
-
-  .scaling-wall::before,
-  .scaling-wall::after {
-    content: "";
-    display: block;
-    height: 715px;
   }
 
   .scaling-wall.show {
@@ -69,6 +87,7 @@
   }
 }
 .appearing-glass-container {
+  margin-top: 97px;
   position: relative;
 }
 
@@ -84,8 +103,9 @@
 .background-image {
   background-image: url(/gradient_glass.png);
   background-repeat: no-repeat;
-  background-position-x: 50px;
-  height: 1200px;
+  background-position-x: 66px;
+  background-position-y: 99px;
+  height: 1325px;
   opacity: 0;
   transform: translateY(50px);
   transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
@@ -93,8 +113,8 @@
 
 .overlay-text-3 {
   position: absolute;
-  bottom: 290px;
-  right: 140px;
+  top: 54.5%;
+  right: 155px;
   opacity: 0;
   transform: translateY(50px);
   transition: transform 2.5s ease-in-out, opacity 2.5s ease-in-out;

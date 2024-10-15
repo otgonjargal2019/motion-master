@@ -95,7 +95,7 @@ export default function Game() {
   }, []);
 
   return (
-    <div className="border w-full">
+    <div className="w-full">
       <div className="title-container text-40">
         <span className="gray">for</span>&nbsp;
         <span className="orange">Game co. / Game IP co.</span>
@@ -108,7 +108,7 @@ export default function Game() {
           className={`silver-cubes scale-05 ${isInImgView ? "showed" : ""}`}
         />
         <div
-          className={`overlay-text big-text motion-y-50 ${
+          className={`overlay-text text-100 motion-y-50 ${
             isInImgView ? "showed" : ""
           }`}
         >
@@ -129,20 +129,19 @@ export default function Game() {
         <div
           className={`overlay-text scale-05 ${isInImg2View ? "showed" : ""}`}
         >
-          <span className="orange text-30">실시간 가이드라인 준수 확인</span>
-          <br />
-          <span className="white text-60">가이드라인이 지켜질까 걱정?</span>
-          <br />
-          <span className="white text-60">이제 그럴 필요 없어요!</span>
-          <br />
-          <span className="white text-30">노력해서 작성한 가이드라인, </span>
-          <span className="gray text-30">
-            스트리머가 잘 지킬까 걱정할 필요 없습니다.
-          </span>
-          <br />
-          <span className="gray text-30">
+          <p className="orange text-30">실시간 가이드라인 준수 확인</p>
+          <p className="white text-60 mt-[15px]">가이드라인이 지켜질까 걱정?</p>
+          <p className="white text-60">이제 그럴 필요 없어요!</p>
+
+          <p className="white text-30 mt-[39px]">
+            노력해서 작성한 가이드라인,{" "}
+            <span className="gray text-30">
+              스트리머가 잘 지킬까 걱정할 필요 없습니다.
+            </span>
+          </p>
+          <p className="gray text-30">
             방송과 게임 안에서 실시간으로 가이드라인을 자동으로 지켜드립니다.
-          </span>
+          </p>
         </div>
       </section>
       <section ref={img3Ref} className="abstract-image-container">
@@ -156,72 +155,70 @@ export default function Game() {
         <div
           className={`overlay-text motion-x-50 ${isInImg3View ? "showed" : ""}`}
         >
-          <span className="orange text-30">라이선스 승인 자동화</span>
-          <br />
-          <span className="white text-60">
+          <p className="orange text-30">라이선스 승인 자동화</p>
+          <p className="white text-60 mt-[13px]">
             이용허락 요청 처리도 간편하게,
-            <br />
-            시간을 절약할 수 있습니다.
-          </span>
-          <br />
-          <span className="white text-30">이용허락 요청</span>
-          <span className="gray text-30">에 대해 일일이 답장할 필요 없이,</span>
-          <br />
-          <span className="gray text-30">일반 요청은</span>
-          <span className="white text-30">자동 승인</span>
-          <span className="gray text-30">
-            , 개별 요청은 설정에 따라 자동 대응!
-            <br />
+          </p>
+          <p className="white text-60">시간을 절약할 수 있습니다.</p>
+          <p className="white text-30 mt-[39px]">
+            이용허락 요청
+            <span className="gray text-30">
+              에 대해 일일이 답장할 필요 없이,
+            </span>
+          </p>
+          <p className="gray text-30">
+            일반 요청은 <span className="white text-30">자동 승인</span>
+            <span className="gray text-30">
+              , 개별 요청은 설정에 따라 자동 대응!
+            </span>
+          </p>
+
+          <p className="gray text-30">
             누가 내 게임을 방송했는지도 손쉽게 확인할 수 있습니다.
-          </span>
+          </p>
         </div>
       </section>
       <section ref={img4Ref} className="hairy-image-container">
         <img
-          className={`hairy-image scale-08 ${isInImg4View ? "showed" : ""}`}
+          className={`hairy-image scale-05 ${isInImg4View ? "showed" : ""}`}
           src="/48.png"
           alt="hairy image"
         />
         <div
           className={`overlay-text motion-y-50 ${isInImg4View ? "showed" : ""}`}
         >
-          <span className="orange text-30">
+          <p className="orange text-30 ">
             전자 가이드라인 기반 핵심 콘텐츠 노출 방지
-          </span>
-          <br />
-          <span className="white text-60">
+          </p>
+          <p className="white text-60 mt-[14px]">
             스포일러 콘텐츠로 인한 매출 하락,
-            <br />
-            이제 걱정 마세요!
-          </span>
-          <br />
-          <br />
-
-          <span className="gray text-30">
+          </p>
+          <p className="white text-60">이제 걱정 마세요!</p>
+          <p className="gray text-30 mt-[40px]">
             복잡한 콘텐츠 노출 제한 조건도 전자 가이드라인으로 자동 처리됩니다.
-          </span>
-          <br />
-          <span className="gray text-30">
+          </p>
+          <p className="gray text-30">
             스트리머에게 따로 설명하지 않아도
-          </span>
-          <span className="white text-30"> 중요한 콘텐츠의 노출</span>
-          <span className="gray text-30">을 자동으로 방지해서</span>
-          <br />
-          <span className="white text-30">매출 저하</span>
-          <span className="gray text-30">를 막아줍니다.</span>
-          <br />
-          <br />
-          <br />
+            <span className="white text-30"> 중요한 콘텐츠의 노출</span>
+            <span className="gray text-30">을 자동으로 방지해서</span>
+          </p>
 
-          <span className="gray text-30">
+          <p className="white text-30">
+            매출 저하
+            <span className="gray text-30">를 막아줍니다.</span>
+          </p>
+
+          <p className="gray text-30 mt-[57px]">
             이해하기 어려워서 지키도록 하기 힘들었던 허용/금지 조건들,
-          </span>
-          <br />
-          <span className="gray text-30">이제</span>
-          <span className="white text-30"> 자동으로 관리</span>
-          <span className="gray text-30">
-            되니까 원하는 조건을 마음대로 추가할 수 있습니다.
-          </span>
+          </p>
+
+          <p className="gray text-30">
+            이제
+            <span className="white text-30"> 자동으로 관리</span>
+            <span className="gray text-30">
+              되니까 원하는 조건을 마음대로 추가할 수 있습니다.
+            </span>
+          </p>
         </div>
       </section>
     </div>
