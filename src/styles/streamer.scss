@@ -81,7 +81,7 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 200px;
+  top: 96px;
   > div {
     width: 4610px;
     min-width: 4610px;
@@ -137,7 +137,7 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 400px;
+  top: 239px;
   > div {
     width: 4610px;
     min-width: 4610px;
@@ -196,6 +196,7 @@
     max-height: 220px;
     font-size: 80px;
     font-weight: 500;
+    line-height: 110px;
     color: white;
     > span {
       font-weight: 700;
@@ -217,22 +218,27 @@
 
 .text_2 {
   > div {
-    margin-left: 240px;
+    margin-left: 247px;
+    margin-top: 6px;
     min-width: 865px;
     max-width: 865px;
     min-height: 220px;
     max-height: 220px;
-    font-size: 80px;
+    font-size: 90px;
     font-weight: 700;
+    line-height: 104px;
+    text-wrap: nowrap;
     color: white;
     > span:nth-child(1) {
-      color: #FF5B15;
+      color: #ff5b15;
     }
     > span:nth-child(3) {
       color: #929292;
+      display: inline-block;
+      margin-top: 32px;
     }
     > span:nth-child(4) {
-      color: #FF5B15;
+      color: #ff5b15;
     }
   }
 }
@@ -248,8 +254,6 @@
   opacity: 1;
   transition: all 1.5s ease-in-out;
 }
-
-
 
 .text_3.hided {
   transform: translateY(50px);
@@ -276,7 +280,8 @@
     > span:nth-child(1) {
       font-size: 30px;
       font-weight: 500;
-      color: #FF5B15;
+      line-height: 50px;
+      color: #ff5b15;
     }
     > p:nth-child(2) {
       font-size: 50px;
@@ -295,8 +300,6 @@
     }
   }
 }
-
-
 
 .text_3_2.hided {
   transform: translateY(50px);
@@ -331,7 +334,6 @@
   }
 }
 
-
 .three_d_black_chrome_shape.hided {
   transform: translateY(50px);
   opacity: 0;
@@ -343,7 +345,6 @@
   opacity: 1;
   transition: all 1.5s ease-in-out;
 }
-
 
 .text_4.hided {
   transform: translateY(50px);
@@ -368,9 +369,16 @@
     font-weight: 700;
     color: white;
     > p:nth-child(1) {
-      margin-top: 16px;
+      font-size: 50px;
+      line-height: 50px;
+      font-weight: 700;
+      color: white;
+    }
+    > p:nth-child(2) {
+      margin-top: 35px;
       font-size: 30px;
       font-weight: 500;
+      line-height: 50px;
       color: #929292;
       > span {
         color: white;
@@ -378,8 +386,6 @@
     }
   }
 }
-
-
 
 .text_5.hided {
   transform: translateY(50px);
@@ -403,10 +409,11 @@
     font-size: 30px;
     font-weight: 700;
     color: white;
+    text-wrap: nowrap;
     > span:nth-child(1) {
       font-size: 30px;
       font-weight: 500;
-      color: #FF5B15;
+      color: #ff5b15;
     }
     > p:nth-child(2) {
       font-size: 50px;
@@ -426,9 +433,6 @@
   }
 }
 
-
-
-
 .three_d_abstract3_19.hided {
   transform: translateY(50px);
   opacity: 0;
@@ -440,4 +444,3 @@
   opacity: 1;
   transition: all 1.5s ease-in-out;
 }
-

@@ -5,15 +5,19 @@ import "@/styles/streamer.scss";
 export default function Streamer() {
   return (
     <div className="bg-black max-w-[1920px] min-h-[100vh] relative">
-      <AnimatedElement classname={"streamer_page_title"}>
+      {/* <AnimatedElement classname={"streamer_page_title"}>
         <div>
           <div>
             <span>for</span>&nbsp;<span>Streamer</span>
           </div>
         </div>
-      </AnimatedElement>
+      </AnimatedElement> */}
+      <div className="title-container text-40">
+        <span className="gray">for</span>&nbsp;
+        <span className="orange">Streamer</span>
+      </div>
 
-      <div className="min-h-[709px] overflow-y-hidden overflow-x-hidden relative top-[120px]">
+      <div className="min-h-[709px] relative">
         <AnimatedElement classname={"streamer_strip_2"}>
           <div>
             <div>
@@ -64,7 +68,8 @@ export default function Streamer() {
           minWidth: "1920px",
           maxWidth: "1920px",
           position: "absolute",
-          top: "709.2px",
+          top: "710px",
+          left: "9px",
           // backgroundColor: "green",
         }}
       >
@@ -202,12 +207,12 @@ export default function Streamer() {
       >
         <AnimatedElement classname={"text_4"}>
           <div>
-            계약 준수 검증
+            <p>계약 준수 검증</p>
             <p>
               게임 방송 중 저작권 문제? 더 이상 걱정하지 마세요!
               <br />
               ​저작권 위반을 이유로 유튜브 같은 플랫폼이
-              <span>실수로 영상을 삭제</span>하더라도,
+              <span> 실수로 영상을 삭제</span>하더라도,
               <br />
               믿을 수 있는 증거가 되어 드릴게요.
               <br />
@@ -231,12 +236,19 @@ export default function Streamer() {
         <AnimatedElement classname={"text_5"}>
           <div>
             <span>실시간 가이드라인 준수 확인</span>
-            <p>게임 방송할 때 가이드라인?<br />
-            이제 신경 쓸 필요 없어요!</p>
             <p>
-            실수로 게임 방송을 위한 <span>가이드라인을 위반</span>할까 걱정할 필요 없이,<br />
-            ​자유롭게 방송하세요.<br />
-            ​방송 SW(OBS)와 게임 안에서 실시간으로 가이드라인 위반을 방지해 드릴게요.
+              게임 방송할 때 가이드라인?
+              <br />
+              이제 신경 쓸 필요 없어요!
+            </p>
+            <p>
+              실수로 게임 방송을 위한 <span>가이드라인을 위반</span>할까 걱정할
+              필요 없이,
+              <br />
+              ​자유롭게 방송하세요.
+              <br />
+              ​방송 SW(OBS)와 게임 안에서 실시간으로 가이드라인 위반을 방지해
+              드릴게요.
             </p>
           </div>
         </AnimatedElement>
@@ -259,7 +271,7 @@ export default function Streamer() {
 
       <div
         style={{
-          minHeight: "3500px",
+          minHeight: "3180px",
           minWidth: "1920px",
           maxWidth: "1920px",
           // backgroundColor: "#444",

@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import AnimatedElement from "@/app/components/AnimatedElement";
 
 export default function Game() {
   const imgRef = useRef(null);
